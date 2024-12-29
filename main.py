@@ -14,19 +14,21 @@ from agentlab.agents.generic_agent import (
     RANDOM_SEARCH_AGENT,
     AGENT_4o,
     AGENT_4o_MINI,
+    AGENT_QWEN25_32B,
 )
 from agentlab.experiments.study import Study
 
 logging.getLogger().setLevel(logging.INFO)
 
 # choose your agent or provide a new agent
-agent_args = [AGENT_4o_MINI]
+# agent_args = [AGENT_4o_MINI]
 # agent_args = [AGENT_4o]
+agent_args = [AGENT_QWEN25_32B]
 
 
 # ## select the benchmark to run on
-benchmark = "miniwob_tiny_test"
-# benchmark = "miniwob"
+# benchmark = "miniwob_tiny_test"
+benchmark = "miniwob"
 # benchmark = "workarena_l1"
 # benchmark = "workarena_l2"
 # benchmark = "workarena_l3"
@@ -42,7 +44,7 @@ reproducibility_mode = False
 relaunch = False
 
 ## Number of parallel jobs
-n_jobs = 4  # Make sure to use 1 job when debugging in VSCode
+n_jobs = 1  # Make sure to use 1 job when debugging in VSCode
 # n_jobs = -1  # to use all available cores
 
 

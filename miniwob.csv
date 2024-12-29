@@ -1,0 +1,126 @@
+task_name,miniwob_category,comment,webgum_subset,similarity_group,browsergym_split
+miniwob.ascending-numbers,hidden test,,FALSE,0,test
+miniwob.bisect-angle,original,,FALSE,1,test
+miniwob.book-flight,original,delay,FALSE,2,train
+miniwob.book-flight-nodelay,nodelay,,FALSE,2,train
+miniwob.buy-ticket,hidden test,,FALSE,3,train
+miniwob.choose-date,original,delay,FALSE,4,train
+miniwob.choose-date-easy,debug,delay,FALSE,4,train
+miniwob.choose-date-medium,debug,delay,FALSE,4,train
+miniwob.choose-date-nodelay,nodelay,,FALSE,4,train
+miniwob.choose-list,original,,TRUE,5,test
+miniwob.circle-center,original,,FALSE,6,train
+miniwob.click-button,original,,TRUE,7,test
+miniwob.click-button-sequence,original,,TRUE,8,test
+miniwob.click-checkboxes,original,,TRUE,9,train
+miniwob.click-checkboxes-large,additional,,TRUE,9,train
+miniwob.click-checkboxes-soft,additional,,TRUE,9,train
+miniwob.click-checkboxes-transfer,additional,,TRUE,9,train
+miniwob.click-collapsible,original,delay,TRUE,10,train
+miniwob.click-collapsible-2,original,delay,TRUE,10,train
+miniwob.click-collapsible-2-nodelay,nodelay,,FALSE,10,train
+miniwob.click-collapsible-nodelay,nodelay,,FALSE,10,train
+miniwob.click-color,original,,TRUE,11,test
+miniwob.click-dialog,original,,TRUE,12,train
+miniwob.click-dialog-2,original,,TRUE,12,train
+miniwob.click-link,original,,TRUE,13,test
+miniwob.click-menu,original,,TRUE,14,test
+miniwob.click-menu-2,original,,FALSE,14,test
+miniwob.click-option,original,,TRUE,15,train
+miniwob.click-pie,original,delay,FALSE,16,test
+miniwob.click-pie-nodelay,nodelay,,FALSE,16,test
+miniwob.click-scroll-list,original,,TRUE,17,test
+miniwob.click-shades,original,,TRUE,18,train
+miniwob.click-shape,original,,TRUE,19,test
+miniwob.click-tab,original,,TRUE,20,test
+miniwob.click-tab-2,original,,TRUE,21,test
+miniwob.click-tab-2-easy,debug,,FALSE,21,test
+miniwob.click-tab-2-hard,additional,,TRUE,21,test
+miniwob.click-tab-2-medium,debug,,FALSE,21,test
+miniwob.click-test,original,,TRUE,22,test
+miniwob.click-test-2,original,,TRUE,23,train
+miniwob.click-test-transfer,debug,,FALSE,23,train
+miniwob.click-widget,original,,TRUE,24,test
+miniwob.copy-paste,original,,FALSE,25,test
+miniwob.copy-paste-2,original,,FALSE,25,test
+miniwob.count-shape,original,,TRUE,26,train
+miniwob.count-sides,original,,FALSE,27,test
+miniwob.daily-calendar,hidden test,,FALSE,28,train
+miniwob.drag-box,original,,FALSE,29,train
+miniwob.drag-circle,original,,FALSE,30,test
+miniwob.drag-cube,original,,FALSE,31,test
+miniwob.drag-items,original,,FALSE,32,train
+miniwob.drag-items-grid,original,,FALSE,33,test
+miniwob.drag-shapes,original,,FALSE,29,train
+miniwob.drag-shapes-2,hidden test,,FALSE,29,train
+miniwob.drag-single-shape,hidden test,,FALSE,34,train
+miniwob.drag-sort-numbers,original,,FALSE,32,train
+miniwob.draw-circle,hidden test,,FALSE,35,train
+miniwob.draw-line,hidden test,,FALSE,36,train
+miniwob.email-inbox,original,,TRUE,37,test
+miniwob.email-inbox-delete,debug,,FALSE,37,test
+miniwob.email-inbox-forward,debug,,FALSE,37,test
+miniwob.email-inbox-forward-nl,additional,,TRUE,37,test
+miniwob.email-inbox-forward-nl-turk,additional,,TRUE,37,test
+miniwob.email-inbox-important,debug,,FALSE,37,test
+miniwob.email-inbox-nl-turk,additional,,TRUE,37,test
+miniwob.email-inbox-noscroll,debug,,FALSE,37,test
+miniwob.email-inbox-reply,debug,,FALSE,37,test
+miniwob.email-inbox-star-reply,debug,,FALSE,37,test
+miniwob.enter-date,original,,TRUE,38,train
+miniwob.enter-password,original,,TRUE,38,train
+miniwob.enter-text,original,,TRUE,38,train
+miniwob.enter-text-2,original,,FALSE,38,train
+miniwob.enter-text-dynamic,original,,TRUE,38,train
+miniwob.enter-time,original,,TRUE,38,train
+miniwob.find-greatest,hidden test,,FALSE,39,test
+miniwob.find-midpoint,original,,FALSE,40,train
+miniwob.find-word,original,,FALSE,41,test
+miniwob.focus-text,original,,TRUE,42,train
+miniwob.focus-text-2,original,,TRUE,42,train
+miniwob.form-sequence,hidden test,,FALSE,43,train
+miniwob.form-sequence-2,hidden test,,FALSE,44,test
+miniwob.form-sequence-3,hidden test,,FALSE,45,test
+miniwob.generate-number,hidden test,,FALSE,46,test
+miniwob.grid-coordinate,original,,TRUE,47,test
+miniwob.guess-number,original,,TRUE,48,test
+miniwob.highlight-text,original,,FALSE,49,test
+miniwob.highlight-text-2,original,,FALSE,49,test
+miniwob.hot-cold,hidden test,,FALSE,50,test
+miniwob.identify-shape,original,,TRUE,51,train
+miniwob.login-user,original,,TRUE,52,train
+miniwob.login-user-popup,additional,,TRUE,52,train
+miniwob.multi-layouts,additional,,TRUE,53,train
+miniwob.multi-orderings,additional,,TRUE,53,train
+miniwob.navigate-tree,original,,TRUE,54,train
+miniwob.number-checkboxes,original,,FALSE,55,test
+miniwob.odd-or-even,hidden test,,FALSE,56,train
+miniwob.order-food,hidden test,,FALSE,57,test
+miniwob.phone-book,hidden test,,FALSE,58,test
+miniwob.read-table,original,,FALSE,59,train
+miniwob.read-table-2,original,,FALSE,59,train
+miniwob.resize-textarea,original,,FALSE,60,test
+miniwob.right-angle,original,,FALSE,61,test
+miniwob.scroll-text,original,,FALSE,62,test
+miniwob.scroll-text-2,original,,FALSE,62,test
+miniwob.search-engine,original,,TRUE,63,train
+miniwob.sign-agreement,hidden test,,FALSE,64,test
+miniwob.simple-algebra,original,,TRUE,65,test
+miniwob.simple-arithmetic,original,,FALSE,65,test
+miniwob.social-media,original,,TRUE,66,test
+miniwob.social-media-all,additional,,TRUE,66,test
+miniwob.social-media-some,additional,,TRUE,66,test
+miniwob.stock-market,hidden test,delay,FALSE,67,test
+miniwob.terminal,original,,TRUE,68,test
+miniwob.text-editor,original,,FALSE,69,train
+miniwob.text-transform,original,,FALSE,70,train
+miniwob.tic-tac-toe,original,,TRUE,71,test
+miniwob.unicode-test,debug,,FALSE,72,train
+miniwob.use-autocomplete,original,delay,TRUE,73,train
+miniwob.use-autocomplete-nodelay,nodelay,,FALSE,73,train
+miniwob.use-colorwheel,original,,FALSE,74,train
+miniwob.use-colorwheel-2,original,,FALSE,74,train
+miniwob.use-slider,original,,FALSE,75,train
+miniwob.use-slider-2,original,,FALSE,75,train
+miniwob.use-spinner,original,,TRUE,76,test
+miniwob.visual-addition,original,,FALSE,77,train

@@ -179,6 +179,14 @@ class ChatModelArgs(BaseModelArgs):
     def make_model(self):
         pass
 
+@dataclass
+class QwenModelArgs(BaseModelArgs):
+    model_name: str = "qwen2.5-32b-at1207-16k"
+
+    def make_model(self):
+        return QwenChatModel(
+            model_name=self.model_name,
+        )
 
 def _extract_wait_time(error_message, min_retry_wait_time=60):
     """Extract the wait time from an OpenAI RateLimitError message."""
@@ -210,6 +218,7 @@ def handle_error(error, itr, min_retry_wait_time, max_retry):
 
 class OpenRouterError(openai.OpenAIError):
     pass
+
 
 
 class ChatModel(AbstractChatModel):
@@ -423,3 +432,40 @@ class HuggingFaceURLChatModel(HFBaseChatModel):
 
         client = InferenceClient(model=model_url, token=token)
         self.llm = partial(client.text_generation, max_new_tokens=max_new_tokens)
+
+
+class QwenChatModel(ChatModel):
+    def __init__(
+        self,
+        model_name: str,
+        api_key=None,
+        temperature: float = 0.7,
+        max_tokens: int = 2000,
+        max_retry: int = 4,
+        min_retry_wait_time: int = 60,
+    ):
+        if "qwen2.5-72b" in model_name:
+            base_url = "http://123.57.10.166:7908/v1"
+        elif "qwen2.5-7b" in model_name:
+            base_url = "http://101.132.136.195:7908/v1"
+        elif "qwen2.5-32b" in model_name:
+            base_url = "http://localhost:8000/v1"
+        else:
+            raise ValueError(f"Unknown Qwen model: {model_name}")
+
+        client_args = {
+            "base_url": base_url,
+        }
+
+        super().__init__(
+            model_name=model_name,
+            api_key=api_key,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            max_retry=max_retry,
+            min_retry_wait_time=min_retry_wait_time,
+            api_key_env_var="DASHSCOPE_API_KEY",
+            client_class=OpenAI,
+            client_args=client_args,
+        )
+        

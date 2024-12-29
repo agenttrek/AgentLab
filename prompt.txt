@@ -1,0 +1,614 @@
+# Instructions
+Review the current state of the page and all other information to find the best
+possible next action to accomplish your goal. Your answer will be interpreted
+and executed by a program, make sure to follow the formatting instructions.
+
+## Goal:
+
+Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on the DIY forum.
+
+# Observation of current step:
+
+## Currently open tabs:
+Tab 0 (active tab):
+    Title: List of forums
+    URL: http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/2
+
+## AXTree:
+Note: [bid] is the unique alpha-numeric identifier at the beginning of lines for each element in the AXTree. Always use bid to refer to elements in your actions.
+
+Note: You can only interact with visible elements. If the "visible" tag is not
+present, the element is not visible on the page.
+
+RootWebArea 'List of forums', focused, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/2'
+	[21] navigation '', visible
+		[22] link 'Jump to main content', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/2#main'
+		[23] link 'Jump to sidebar', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/2#sidebar'
+	[24] navigation '', visible
+		[26] sectionheader '', visible
+			[27] link 'Home', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/'
+				StaticText 'Postmill'
+		[37] list '', visible
+			[38] listitem '', visible
+				[39] link 'Forums', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums'
+			[40] listitem '', visible
+				[41] link 'Wiki', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/wiki'
+		[51] searchbox 'Search query', clickable, visible
+		[52] list '', visible
+			[53] listitem '', visible
+				[54] link 'Notifications (0)', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/notifications'
+					[57] image '', visible
+			[58] listitem '', visible
+				[59] link 'Submit', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/submit'
+					[62] image '', visible
+					StaticText 'Submit'
+			[64] listitem '', visible
+				[65] button 'MarvelsGrantMan136', visible, hasPopup='menu', expanded=False
+					[68] image '', visible
+					[69] strong '', visible
+						StaticText 'MarvelsGrantMan136'
+	[110] main ''
+		[111] navigation '', visible
+			[112] list '', visible
+				[113] listitem '', visible
+					[114] link 'Forums', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums'
+				[115] listitem '', visible
+					[116] link 'Tags', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/tags'
+				[117] listitem '', visible
+					[118] link 'Alphabetical', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/all'
+			[119] list '', visible
+				[120] listitem '', visible
+					[121] button 'Sort by: Submissions', visible, hasPopup='menu', expanded=False
+						[123] image '', visible
+						StaticText 'Submissions'
+		[138] heading 'List of forums', visible
+		[140] link 'Create forum', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/create_forum'
+		[142] article '', visible
+			[144] heading 'dataisbeautiful — dataisbeautiful', visible
+				[145] link 'dataisbeautiful — dataisbeautiful', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/dataisbeautiful'
+			[150] paragraph '', visible
+				StaticText 'dataisbeautiful'
+			[155] button 'Subscribe No subscribers', clickable, visible
+				StaticText 'Subscribe'
+				StaticText '0'
+			[161] paragraph '', visible
+				StaticText '1,658 submissions'
+		[162] article '', visible
+			[164] heading 'aww — aww', visible
+				[165] link 'aww — aww', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/aww'
+			[170] paragraph '', visible
+				StaticText 'aww'
+			[175] button 'Subscribe No subscribers', clickable, visible
+				StaticText 'Subscribe'
+				StaticText '0'
+			[181] paragraph '', visible
+				StaticText '1,605 submissions'
+		[182] article '', visible
+			[184] heading 'OldSchoolCool — OldSchoolCool', visible
+				[185] link 'OldSchoolCool — OldSchoolCool', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/OldSchoolCool'
+			[190] paragraph '', visible
+				StaticText 'OldSchoolCool'
+			[195] button 'Subscribe No subscribers', clickable, visible
+				StaticText 'Subscribe'
+				StaticText '0'
+			[201] paragraph '', visible
+				StaticText '1,580 submissions'
+		[202] article '', visible
+			[204] heading 'nyc — nyc', visible
+				[205] link 'nyc — nyc', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/nyc'
+			[210] paragraph '', visible
+				StaticText 'nyc'
+			[215] button 'Subscribe No subscribers', clickable, visible
+				StaticText 'Subscribe'
+				StaticText '0'
+			[221] paragraph '', visible
+				StaticText '1,507 submissions'
+		[222] article '', visible
+			[224] heading 'MechanicalKeyboards — MechanicalKeyboards', visible
+				[225] link 'MechanicalKeyboards — MechanicalKeyboards', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/MechanicalKeyboards'
+			[230] paragraph '', visible
+				StaticText 'MechanicalKeyboards'
+			[235] button 'Subscribe No subscribers', clickable, visible
+				StaticText 'Subscribe'
+				StaticText '0'
+			[241] paragraph '', visible
+				StaticText '1,488 submissions'
+		[242] article ''
+			[244] heading 'boston — boston', visible
+				[245] link 'boston — boston', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/boston'
+			[250] paragraph ''
+				StaticText 'boston'
+			[255] button 'Subscribe No subscribers', clickable, visible
+				StaticText 'Subscribe'
+				StaticText '0'
+			[261] paragraph ''
+				StaticText '1,447 submissions'
+		[262] article ''
+			[264] heading 'philadelphia — philadelphia'
+				[265] link 'philadelphia — philadelphia', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/philadelphia'
+			[270] paragraph ''
+				StaticText 'philadelphia'
+			[275] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[281] paragraph ''
+				StaticText '1,444 submissions'
+		[282] article ''
+			[284] heading 'food — food'
+				[285] link 'food — food', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/food'
+			[290] paragraph ''
+				StaticText 'food'
+			[295] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[301] paragraph ''
+				StaticText '1,414 submissions'
+		[302] article ''
+			[304] heading 'Connecticut — Connecticut'
+				[305] link 'Connecticut — Connecticut', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/Connecticut'
+			[310] paragraph ''
+				StaticText 'Connecticut'
+			[315] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[321] paragraph ''
+				StaticText '1,413 submissions'
+		[322] article ''
+			[324] heading 'iphone — iphone'
+				[325] link 'iphone — iphone', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/iphone'
+			[330] paragraph ''
+				StaticText 'iphone'
+			[335] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[341] paragraph ''
+				StaticText '1,394 submissions'
+		[342] article ''
+			[344] heading 'askscience — askscience'
+				[345] link 'askscience — askscience', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/askscience'
+			[350] paragraph ''
+				StaticText 'askscience'
+			[355] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[361] paragraph ''
+				StaticText '1,380 submissions'
+		[362] article ''
+			[364] heading 'pittsburgh — pittsburgh'
+				[365] link 'pittsburgh — pittsburgh', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/pittsburgh'
+			[370] paragraph ''
+				StaticText 'pittsburgh'
+			[375] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[381] paragraph ''
+				StaticText '1,371 submissions'
+		[382] article ''
+			[384] heading 'newjersey — newjersey'
+				[385] link 'newjersey — newjersey', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/newjersey'
+			[390] paragraph ''
+				StaticText 'newjersey'
+			[395] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[401] paragraph ''
+				StaticText '1,359 submissions'
+		[402] article ''
+			[404] heading 'washingtondc — washingtondc'
+				[405] link 'washingtondc — washingtondc', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/washingtondc'
+			[410] paragraph ''
+				StaticText 'washingtondc'
+			[415] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[421] paragraph ''
+				StaticText '1,351 submissions'
+		[422] article ''
+			[424] heading 'Art — Art'
+				[425] link 'Art — Art', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/Art'
+			[430] paragraph ''
+				StaticText 'Art'
+			[435] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[441] paragraph ''
+				StaticText '1,343 submissions'
+		[442] article ''
+			[444] heading 'Pennsylvania — Pennsylvania'
+				[445] link 'Pennsylvania — Pennsylvania', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/Pennsylvania'
+			[450] paragraph ''
+				StaticText 'Pennsylvania'
+			[455] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[461] paragraph ''
+				StaticText '1,322 submissions'
+		[462] article ''
+			[464] heading 'massachusetts — massachusetts'
+				[465] link 'massachusetts — massachusetts', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/massachusetts'
+			[470] paragraph ''
+				StaticText 'massachusetts'
+			[475] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[481] paragraph ''
+				StaticText '1,308 submissions'
+		[482] article ''
+			[484] heading 'BuyItForLife — BuyItForLife'
+				[485] link 'BuyItForLife — BuyItForLife', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/BuyItForLife'
+			[490] paragraph ''
+				StaticText 'BuyItForLife'
+			[495] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[501] paragraph ''
+				StaticText '1,298 submissions'
+		[502] article ''
+			[504] heading 'newhampshire — newhampshire'
+				[505] link 'newhampshire — newhampshire', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/newhampshire'
+			[510] paragraph ''
+				StaticText 'newhampshire'
+			[515] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[521] paragraph ''
+				StaticText '1,288 submissions'
+		[522] article ''
+			[524] heading 'singularity — singularity'
+				[525] link 'singularity — singularity', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/singularity'
+			[530] paragraph ''
+				StaticText 'singularity'
+			[535] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[541] paragraph ''
+				StaticText '1,286 submissions'
+		[542] article ''
+			[544] heading 'Maine — Maine'
+				[545] link 'Maine — Maine', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/Maine'
+			[550] paragraph ''
+				StaticText 'Maine'
+			[555] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[561] paragraph ''
+				StaticText '1,280 submissions'
+		[562] article ''
+			[564] heading 'nottheonion — nottheonion'
+				[565] link 'nottheonion — nottheonion', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/nottheonion'
+			[570] paragraph ''
+				StaticText 'nottheonion'
+			[575] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[581] paragraph ''
+				StaticText '1,274 submissions'
+		[582] article ''
+			[584] heading 'DIY — DIY'
+				[585] link 'DIY — DIY', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/DIY'
+			[590] paragraph ''
+				StaticText 'DIY'
+			[595] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[601] paragraph ''
+				StaticText '1,268 submissions'
+		[602] article ''
+			[604] heading 'headphones — headphones'
+				[605] link 'headphones — headphones', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/headphones'
+			[610] paragraph ''
+				StaticText 'headphones'
+			[615] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[621] paragraph ''
+				StaticText '1,260 submissions'
+		[622] article ''
+			[624] heading 'rva — rva'
+				[625] link 'rva — rva', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/rva'
+			[630] paragraph ''
+				StaticText 'rva'
+			[635] button 'Subscribe No subscribers', clickable
+				StaticText 'Subscribe'
+				StaticText '0'
+			[641] paragraph ''
+				StaticText '1,245 submissions'
+		[642] navigation ''
+			[643] list ''
+				[645] listitem ''
+					[646] link 'Previous', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums'
+				[647] listitem ''
+					[648] link 'Page 1', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums'
+				[649] listitem ''
+					[650] link 'Page 2', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/2'
+				[651] listitem ''
+					[652] link 'Page 3', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/3'
+				[653] listitem ''
+					[654] link 'Page 4', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/4'
+				[655] listitem ''
+					[656] link 'Next', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums/by_submissions/3'
+	[659] contentinfo ''
+		[660] paragraph ''
+			StaticText 'Running'
+			[662] link 'Postmill', clickable, url='https://postmill.xyz/'
+
+## Focused element:
+bid='19'
+
+## Error from previous action:
+TimeoutError: Locator.click: Timeout 500ms exceeded.
+
+Call log:
+
+  - waiting for get_by_test_id("655")
+
+
+
+# History of interaction with the task:
+
+## step 0
+
+<action>
+click('42')
+</action>
+
+## step 1
+
+<action>
+click('244') <!-- Clicking on the 'DIY' forum link -->
+</action>
+
+## step 2
+
+<action>
+click('45')
+</action>
+
+## step 3
+
+<action>
+click('655') <!-- Clicking on the 'Next' button to navigate to the next page of forums -->
+</action>
+
+# Action space:
+Note: This action set allows you to interact with your environment. Most of them
+are python function executing playwright code. The primary way of referring to
+elements in the page is through bid which are specified in your observations.
+
+
+15 different types of actions are available.
+
+noop(wait_ms: float = 1000)
+scroll(delta_x: float, delta_y: float)
+keyboard_press(key: str)
+click(bid: str, button: Literal['left', 'middle', 'right'] = 'left', modifiers: list[typing.Literal['Alt', 'Control', 'ControlOrMeta', 'Meta', 'Shift']] = [])
+fill(bid: str, value: str)
+hover(bid: str)
+tab_focus(index: int)
+new_tab()
+go_back()
+go_forward()
+goto(url: str)
+tab_close()
+select_option(bid: str, options: str | list[str])
+send_msg_to_user(text: str)
+report_infeasible(reason: str)
+Only a single action can be provided at once. Example:
+fill('a12', 'example with "quotes"')
+
+Note:
+* Some tasks may be game like and may require to interact with the mouse position
+in x, y coordinates.
+* Some text field might have auto completion. To see it, you have to type a few
+characters and wait until next step.
+* If you have to cut and paste, don't forget to select the text first.
+* Coordinate inside an SVG are relative to it's top left corner.
+* Make sure to use bid to identify elements when using commands.
+* Interacting with combobox, dropdowns and auto-complete fields can be tricky,
+sometimes you need to use select_option, while other times you need to use fill
+or click and wait for the reaction of the page.
+
+
+# Abstract Example
+
+Here is an abstract version of the answer with description of the content of
+each tag. Make sure you follow this structure, but replace the content with your
+answer:
+
+<think>
+Think step by step. If you need to make calculations such as coordinates, write them here. Describe the effect
+that your previous action had on the current content of the page.
+</think>
+
+<action>
+One single action to be executed. You can only use one action at a time.
+</action>
+
+
+# Concrete Example
+
+Here is a concrete example of how to format your answer.
+Make sure to follow the template with proper tags:
+
+<think>
+From previous action I tried to set the value of year to "2022",
+using select_option, but it doesn't appear to be in the form. It may be a
+dynamic dropdown, I will try using click with the bid "a324" and look at the
+response from the page.
+</think>
+
+<action>
+click('a324')
+</action>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+You are an agent trying to solve a web task based on the content of the page and
+user instructions. You can interact with the page and explore, and send messages to the user. Each time you
+submit an action it will be sent to the browser and you will receive a new page.
+# Instructions
+Review the current state of the page and all other information to find the best
+possible next action to accomplish your goal. Your answer will be interpreted
+and executed by a program, make sure to follow the formatting instructions.
+
+## Goal:
+
+Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on the DIY forum.
+
+# Observation of current step:
+
+## Currently open tabs:
+Tab 0 (active tab):
+    Title: Postmill
+    URL: http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/
+
+## AXTree:
+Note: [bid] is the unique alpha-numeric identifier at the beginning of lines for each element in the AXTree. Always use bid to refer to elements in your actions.
+
+Note: You can only interact with visible elements. If the "visible" tag is not
+present, the element is not visible on the page.
+
+RootWebArea 'Postmill', focused, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/'
+	[24] navigation '', visible
+		[25] link 'Jump to main content', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/#main'
+		[26] link 'Jump to sidebar', clickable, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/#sidebar'
+	[27] navigation '', visible
+		[29] sectionheader '', visible
+			[30] link 'Home', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/'
+				StaticText 'Postmill'
+		[40] list '', visible
+			[41] listitem '', visible
+				[42] link 'Forums', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/forums'
+			[43] listitem '', visible
+				[44] link 'Wiki', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/wiki'
+		[54] searchbox 'Search query', clickable, visible
+		[55] list '', visible
+			[56] listitem '', visible
+				[57] link 'Notifications (0)', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/notifications'
+					[60] image '', visible
+			[61] listitem '', visible
+				[62] link 'Submit', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/submit'
+					[65] image '', visible
+					StaticText 'Submit'
+			[67] listitem '', visible
+				[68] button 'MarvelsGrantMan136', visible, hasPopup='menu', expanded=False
+					[71] image '', visible
+					[72] strong '', visible
+						StaticText 'MarvelsGrantMan136'
+	[113] main '', visible
+		[114] navigation '', visible
+			[115] list '', visible
+				[116] listitem '', visible
+					[117] link 'Submissions', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/'
+				[118] listitem '', visible
+					[119] link 'Comments', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/comments'
+			[120] list '', visible
+				[121] listitem '', visible
+					[122] button 'Filter on: Subscribed', visible, hasPopup='menu', expanded=False
+						[124] image '', visible
+						StaticText 'Subscribed'
+				[136] listitem '', visible
+					[137] button 'Sort by: Hot', visible, hasPopup='menu', expanded=False
+						[139] image '', visible
+						StaticText 'Hot'
+	[155] complementary '', visible
+		[157] heading 'Subscribed forums', visible
+		[158] list '', visible
+			[159] listitem '', visible
+				[160] link 'cmu_lti', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/cmu_lti'
+			[161] listitem '', visible
+				[162] link 'Cyberpunk', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/Cyberpunk'
+			[163] listitem '', visible
+				[164] link 'PlantsForCatParents', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/PlantsForCatParents'
+			[165] listitem '', visible
+				[166] link 'sci_fi', clickable, visible, url='http://ec2-18-219-241-4.us-east-2.compute.amazonaws.com:9999/f/sci_fi'
+	[167] contentinfo '', visible
+		[168] paragraph '', visible
+			StaticText 'Running'
+			[170] link 'Postmill', clickable, visible, url='https://postmill.xyz/'
+
+## Focused element:
+bid='22'
+
+
+# History of interaction with the task:
+
+# Action space:
+Note: This action set allows you to interact with your environment. Most of them
+are python function executing playwright code. The primary way of referring to
+elements in the page is through bid which are specified in your observations.
+
+
+15 different types of actions are available.
+
+noop(wait_ms: float = 1000)
+scroll(delta_x: float, delta_y: float)
+keyboard_press(key: str)
+click(bid: str, button: Literal['left', 'middle', 'right'] = 'left', modifiers: list[typing.Literal['Alt', 'Control', 'ControlOrMeta', 'Meta', 'Shift']] = [])
+fill(bid: str, value: str)
+hover(bid: str)
+tab_focus(index: int)
+new_tab()
+go_back()
+go_forward()
+goto(url: str)
+tab_close()
+select_option(bid: str, options: str | list[str])
+send_msg_to_user(text: str)
+report_infeasible(reason: str)
+Only a single action can be provided at once. Example:
+fill('a12', 'example with "quotes"')
+
+Note:
+* Some tasks may be game like and may require to interact with the mouse position
+in x, y coordinates.
+* Some text field might have auto completion. To see it, you have to type a few
+characters and wait until next step.
+* If you have to cut and paste, don't forget to select the text first.
+* Coordinate inside an SVG are relative to it's top left corner.
+* Make sure to use bid to identify elements when using commands.
+* Interacting with combobox, dropdowns and auto-complete fields can be tricky,
+sometimes you need to use select_option, while other times you need to use fill
+or click and wait for the reaction of the page.
+
+
+# Abstract Example
+
+Here is an abstract version of the answer with description of the content of
+each tag. Make sure you follow this structure, but replace the content with your
+answer:
+
+<think>
+Think step by step. If you need to make calculations such as coordinates, write them here. Describe the effect
+that your previous action had on the current content of the page.
+</think>
+
+<action>
+One single action to be executed. You can only use one action at a time.
+</action>
+
+
+# Concrete Example
+
+Here is a concrete example of how to format your answer.
+Make sure to follow the template with proper tags:
+
+<think>
+From previous action I tried to set the value of year to "2022",
+using select_option, but it doesn't appear to be in the form. It may be a
+dynamic dropdown, I will try using click with the bid "a324" and look at the
+response from the page.
+</think>
+
+<action>
+click('a324')
+</action>
+
+
+
+
+
+

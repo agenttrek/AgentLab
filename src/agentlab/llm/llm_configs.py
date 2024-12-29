@@ -3,6 +3,7 @@ from agentlab.llm.chat_api import (
     OpenAIModelArgs,
     OpenRouterModelArgs,
     SelfHostedModelArgs,
+    QwenModelArgs,
 )
 
 default_oss_llms_args = {
@@ -168,6 +169,13 @@ CHAT_MODEL_ARGS_DICT = {
         max_total_tokens=128_000,
         max_input_tokens=128_000,
         max_new_tokens=64_000,
+        temperature=1e-1,
+    ),
+    "qwen/qwen2.5-32b-instruct": QwenModelArgs(
+        model_name="qwen2.5-32b-at1207-16k",
+        max_total_tokens=32_000,
+        max_input_tokens=30_000,
+        max_new_tokens=2_000,
         temperature=1e-1,
     ),
 }

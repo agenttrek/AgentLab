@@ -23,7 +23,8 @@ from agentlab.llm.llm_utils import Discussion, ParseError, SystemMessage, retry
 from agentlab.llm.tracking import cost_tracker_decorator
 
 from .generic_agent_prompt import GenericPromptFlags, MainPrompt
-
+import logging
+logger = logging.getLogger(__name__)
 
 @dataclass
 class GenericAgentArgs(AgentArgs):
@@ -124,6 +125,7 @@ class GenericAgent(Agent):
             # cause it to be too long
 
             chat_messages = Discussion([system_prompt, human_prompt])
+            logger.info(f"chat_messages: {chat_messages}")
             ans_dict = retry(
                 self.chat_llm,
                 chat_messages,
